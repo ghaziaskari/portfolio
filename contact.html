@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Arman Ghaziaskari Naeini">
+    <title>Contact - Arman Ghaziaskari Naeini</title>
+    <script src="https://kit.fontawesome.com/f072e73e49.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,es,fa,eu,ar',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="study.html">Studies</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="contact.html" class="selected">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="google_translate_element"></div>
+    </header>
+
+    <main>
+        <section>
+            <h1>Contact Me</h1>
+            <form id="contact_form" action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Write your name here." aria-label="Your Name">
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Write your Email here." pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter a valid email address (e.g., name@example.com)" aria-label="Your Email">
+                <br>
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" cols="80" rows="4" required placeholder="Write your message here." aria-label="Your Message"></textarea>
+                <br>
+                <button type="submit" aria-label="Send Message">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Arman Ghaziaskari Naeini</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/arman-ghaziaskari/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://github.com/ghaziaskari/" aria-label="GitHub"><i class="fa-brands fa-github"></i> GitHub</a></li>
+            <li><a href="https://www.kaggle.com/armanghazi" aria-label="Kaggle"><i class="fa-brands fa-kaggle"></i> Kaggle</a></li>
+        </ul>
+        <p>ghaziaskari@gmail.com</p>
+    </footer>
+</body>
+</html>
