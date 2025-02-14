@@ -30,7 +30,7 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content:space-around;
     margin: 0;
     padding: 0;
 }
@@ -116,6 +116,7 @@ h3 {
 .user-info {
     display: flex;
     gap: 3rem;
+    align-items: center;
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
@@ -125,6 +126,9 @@ h3 {
 }
 
 .user-info--image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-shrink: 0;
     width: 300px;
 }
@@ -132,13 +136,16 @@ h3 {
 .user-info--image img {
     width: 100%;
     height: auto;
-    border-radius: 1rem;
+    border-radius: 3rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    display: block; /* Removes any extra space below the image */
+    margin: 0 auto; /* Centers the image horizontally */
+    
 }
 
 .user-info--image img:hover {
-    transform: scale(1.02);
+    transform: scale(2.5);
 }
 
 .user-info--text {
@@ -164,7 +171,6 @@ h3 {
     margin-bottom: 0;
 }
 
-/* Highlight key phrases */
 .user-info--text strong {
     color: var(--secondary-color);
     font-weight: 600;
@@ -172,16 +178,30 @@ h3 {
 
 /* Education Section */
 
-.Education p {
+.Education p,.Additional-Training p {
     font-size: 3.5rm;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     color: white;
     align-items: center;
+    margin: 1rem 0;
 }
 
-.Education h2 {
+.Education h1,.Additional-Training h1 {
+    text-align: center;
+    color: var(--color-secondary);
+    font-size: 4 rm;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.Education h2, .Additional-Training h2 {
     font-size: 3rm;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     color: white;
     align-items: center;
+    margin: 1rem 0;
+    text-align: center;
 }
 
 .Education {
@@ -192,6 +212,7 @@ h3 {
     color: white;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
     position: relative;
+    text-align: center;
 }
 
 .Education::before {
@@ -208,11 +229,6 @@ h3 {
 .Education * {
     position: relative;
     z-index: 1;
-}
-
-.Education h1{
-    text-align: center;
-    color: var(--color-secondary);
 }
 
 /* Additional Training Section */
@@ -242,12 +258,13 @@ h3 {
     z-index: 1;
 }
 
-/* University Logos */
+/* University Images Interaction Styles */
 .university-images {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
+    align-items: center;
+    margin: 2rem 0;
+    perspective: 1000px; /* Adds depth to the transform */
 }
 
 .university-images img {
@@ -256,10 +273,30 @@ h3 {
     border-radius: 10px;
     border: 2px solid white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
+/* Hover effect */
+.university-images img:hover {
+    transform: scale(2) translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Click effect using :active */
+.university-images img:active {
+    transform: scale(2) translate(0, 20px);
+    z-index: 100; /* Ensures the scaled image appears above other content */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Add media query for smaller screens */
+@media (max-width: 768px) {
+    .university-images img:active {
+        transform: scale(1.5) translate(0, 10px); /* Smaller scale for mobile */
+
 /* Project sections */
-#datascience, #GIS {
+#datascience, #GIS, #teaching, #Thesis_advisor_of_master, #publication, #honors_awards {
     border-left: 4px solid var(--secondary-color);
     padding-left: 1.5rem;
 }
@@ -313,7 +350,7 @@ ul li {
 
 /* Contact Form */
 #contact-form {
-    background-color: rgb(114, 250, 166);
+    background-color: rgba(233, 226, 222, 0.97);
     padding: 20px;
     width: 70%;
     margin: auto;
