@@ -38,7 +38,7 @@ If you have suggestions or improvements, feel free to fork the repository and su
 ## Contact
 For any inquiries, you can reach me at:
 - Email: ghaziaskari@gmail.com
-- LinkedIn: [Your LinkedIn Profile]([https://linkedin.com/in/yourprofile](https://www.linkedin.com/in/arman-ghaziaskari)
+- LinkedIn: https://www.linkedin.com/in/arman-ghaziaskari
 
 ---
 ### 🚀 Thank you for visiting my portfolio!
