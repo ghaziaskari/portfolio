@@ -17,7 +17,7 @@ This is my personal portfolio website built using **HTML, CSS, and JavaScript**.
 The website is deployed on **GitHub Pages**.
 
 ### Live Demo
-You can view the live website here: [GitHub Pages Link](https://yourusername.github.io/yourrepository)
+You can view the live website here: [GitHub Pages Link]([https://armanghazi.github.io/portfolio])
 
 ## Installation and Setup
 1. Clone this repository:
