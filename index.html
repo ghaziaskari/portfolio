@@ -31,6 +31,17 @@
         <div id="google_translate_element"></div>
     </header>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navMenu = document.querySelector("nav ul");
+        
+            menuToggle.addEventListener("click", function () {
+                navMenu.classList.toggle("active");
+            });
+        });
+        </script>
+
     <main>
         <section class="about">
             <article class="user-info">
@@ -51,15 +62,21 @@
     </main>
 
     <footer>
-        
+
         <p>&copy; Arman Ghaziaskari Naeini</p>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/arman-ghaziaskari/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
-            <li><a href="https://github.com/ghaziaskari/" aria-label="GitHub"><i class="fa-brands fa-github"></i> GitHub</a></li>
-            <li><a href="https://www.kaggle.com/armanghazi" aria-label="Kaggle"><i class="fa-brands fa-kaggle"></i> Kaggle</a></li>
-        </ul>
-        
-        <p>ghaziaskari@gmail.com</p>
+    
+
+        <div class="footer-links">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/arman-ghaziaskari/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                <li><a href="https://github.com/armanghazi/" aria-label="GitHub"><i class="fa-brands fa-github"></i> GitHub</a></li>
+                <li><a href="https://www.kaggle.com/armanghazi" aria-label="Kaggle"><i class="fa-brands fa-kaggle"></i> Kaggle</a></li>
+            </ul>
+        </div>
+    
+
+        <p><a href="mailto:ghaziaskari@gmail.com">ghaziaskari@gmail.com</a></p>
     </footer>
+    
 </body>
 </html>
