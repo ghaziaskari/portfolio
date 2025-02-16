@@ -361,63 +361,70 @@ input:focus, textarea:focus, :focus {
     background-color: var(--section-bg);
     margin-bottom: 1rem;
 }
-
-/* Footer */
+/* Footer Styles */
 footer {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 30px 0;
-    text-align:left;
-    font-weight: bold;
+    background-color: #222; /* Dark background */
+    color: #fff; /* White text */
+    padding: 15px 20px;
+    font-size: 1rem;
 }
 
-.footer-content {
+/* Flexbox container for alignment */
+.footer-container {
     display: flex;
-    flex-direction:column;
-    gap: 5rem;
-    align-items:normal;
+    justify-content: space-between; /* Aligns items: left, center, right */
+    align-items: center; /* Centers items vertically */
+    flex-wrap: wrap; /* Prevents overflow on small screens */
 }
 
+/* Footer links in center */
 .footer-links ul {
+    display: flex;
+    gap: 50px; 
     list-style: none;
     padding: 0;
-    display: flex;
-    justify-content:left;
-    gap: 8rem;
-    margin-bottom: 0.5rem;
+    margin: 0;
 }
 
-.footer-links li {
+/* Styling for links */
+.footer-links ul li {
     display: inline;
 }
 
-.footer-links a {
-    color: white;
+.footer-links ul li a {
     text-decoration: none;
-    transition: color 0.3s;
+    color: #ddd; 
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
-.footer-links a:hover {
-    color: var(--secondary-color);
-    text-decoration: underline;
+.footer-links ul li a:hover {
+    color: #1e90ff; 
 }
 
-.footer-info {
-    font-size: 0.9rem;
-    opacity: 0.8;
+/* Email styling (right side) */
+.email {
+    text-decoration: none; 
+    color: inherit; 
+    font-weight: 500;
 }
 
-.footer-info p {
-    margin: 0.5rem 0;
-}
-.footer_bottom {
-    display: flex;
-    gap: 3rem;  
+.email:hover {
+    color: #1e90ff;
 }
 
-.footer_bottom a {
-    text-decoration: none;
-    color: inherit;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .footer-links ul {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
 
