@@ -348,14 +348,15 @@ ul li {
 /* Contact Form */
 #contact-form {
     background-color: rgba(247, 244, 242, 0.97);
-    padding: 20px;
-    width: 70%;
-    margin: auto;
+    padding: 30px; 
+    width: 90%; 
+    margin:4rem;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 #contact-form label {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     margin-bottom: 5px;
 }
 
@@ -373,11 +374,18 @@ ul li {
     background-color: rgb(132, 129, 127);
     border: none;
     cursor: pointer;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 
 #contact-form button:hover {
     background-color: rgb(233, 122, 14);
+}
+
+/* Focus Styles */
+input:focus, textarea:focus, :focus {
+    outline: 2px solid var(--secondary-color);
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+    outline-offset: 2px;
 }
 
 /* Focus Styles */
