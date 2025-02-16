@@ -65,6 +65,14 @@ img[loading] {
 }
 
 
+html[lang="fa"], body[lang="fa"],
+html[lang="ar"], body[lang="ar"] {
+    direction: rtl;
+    text-align: right;
+}
+
+
+
 /* Main content */
 main {
     max-width: 1200px;
@@ -111,13 +119,14 @@ h3 {
     background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
     border-radius: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 83vw;
 }
 
 .user-info {
     display: flex;
     gap: 3rem;
     align-items: center;
-    width: 100vw;
+    width: 80vw;
     border: 1px solid black;
     margin: 0 auto;
     padding: 2rem;
@@ -130,20 +139,18 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0;
-    width: 300px;
+   
 }
 
 .user-info--image img {
-    width: 100%;
+    width: 80%;
     height: auto;
-    border-radius: 3rem;
+    border-radius: 40%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    display: block; /* Removes any extra space below the image */
-    margin: 0 auto; /* Centers the image horizontally */
-    
+   
 }
+
 
 .user-info--image img:hover {
     transform: scale(2.5);
