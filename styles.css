@@ -222,6 +222,7 @@ h3 {
 
 .Education h2, .Additional-Training h2 {
     font-size: 3rem;
+    color: #FFD700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin: 1rem 0;
 }
@@ -514,23 +515,4 @@ textarea:focus {
     * {
         transition: none !important;
     }
-}
-
-/* Dark Mode */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #121212;
-        color: #ffffff;
-    }
-    
-
-}
-
-/* Light Mode */
-@media (prefers-color-scheme: light) {
-    body {
-        background-color: #ffffff;
-        color: #121212;
-    }
-    
 }
